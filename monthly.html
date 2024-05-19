@@ -6,6 +6,41 @@
     <title>Monthly Mystery Book</title>
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <style>
+        /* Additional CSS for styling */
+        .checkout-button {
+            margin-top: 20px;
+        }
+
+        .checkout-button a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #e74c3c;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .checkout-button a:hover {
+            background-color: #c0392b;
+        }
+
+        .discount-section {
+            margin-top: 30px;
+        }
+
+        .discount-input {
+            width: 200px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .apply-discount-button {
+            margin-top: 10px;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -29,6 +64,13 @@
             </div>
             <div class="checkout-button">
                 <a href="checkout.html">Proceed to Checkout</a>
+            </div>
+            <div class="discount-section">
+                <h3>Apply Discount</h3>
+                <input type="text" class="discount-input" placeholder="Enter discount code">
+                <div class="apply-discount-button">
+                    <button>Apply Discount</button>
+                </div>
             </div>
         </section>
     </main>
