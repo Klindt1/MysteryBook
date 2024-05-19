@@ -105,6 +105,16 @@ main {
     background-color: #2980b9;
 }
 
+/* BookTok section background */
+#BookTok {
+    background-image: url('https://t4.ftcdn.net/jpg/03/38/50/87/360_F_338508759_ScNUoXMdZy6xyqNU3veckBGwMCeNGWsY.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0; /* Adjust padding as needed */
+    text-align: center;
+    color: #fff; /* Set text color to white for better contrast */
+}
+
 /* Footer styles */
 footer {
     text-align: center;
