@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mystery Book Store</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -13,7 +14,7 @@
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#books">Books</a></li>
+                <li><a href="#catalog">Catalog</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
@@ -21,9 +22,11 @@
 
     <main>
         <section id="home">
-            <h2>Welcome to the Mystery Book Store</h2>
-            <p>Discover your next great read. Each book is a surprise!</p>
-            <button onclick="buyMysteryBook()">Buy a Mystery Book</button>
+            <div class="intro">
+                <h2>Welcome to the Mystery Book Store</h2>
+                <p>Discover your next great read. Each book is a surprise!</p>
+                <button onclick="buyMysteryBook()">Buy a Mystery Book</button>
+            </div>
         </section>
 
         <section id="about">
@@ -31,9 +34,14 @@
             <p>We are passionate about books and love the thrill of a good mystery. Our store offers a unique experience where you can buy books without knowing the title or author. It's a literary adventure!</p>
         </section>
 
-        <section id="books">
-            <h2>Our Collection</h2>
-            <p>We have a wide range of genres, all wrapped and ready to surprise you. From thrillers to romances, you never know what you might get!</p>
+        <section id="catalog">
+            <h2>Book Catalog</h2>
+            <div class="book-list">
+                <div class="book-item">Mystery Book 1</div>
+                <div class="book-item">Mystery Book 2</div>
+                <div class="book-item">Mystery Book 3</div>
+                <div class="book-item">Mystery Book 4</div>
+            </div>
         </section>
 
         <section id="contact">
