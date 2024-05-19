@@ -1,36 +1,46 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #f8f8f8;
     color: #333;
 }
 
 header {
-    background-color: #333;
+    background-color: #4b0082;
     color: #fff;
     padding: 1rem 0;
     text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 header h1 {
     margin: 0;
+    font-size: 2.5rem;
 }
 
 nav ul {
     list-style: none;
     padding: 0;
+    margin: 1rem 0 0;
+    display: flex;
+    justify-content: center;
 }
 
 nav ul li {
-    display: inline;
     margin: 0 1rem;
 }
 
 nav ul li a {
     color: #fff;
     text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ff6347;
 }
 
 main {
@@ -39,24 +49,56 @@ main {
 
 main section {
     margin-bottom: 2rem;
+    text-align: center;
+}
+
+main section#home {
+    background: url('https://images.unsplash.com/photo-1512820790803-83ca734da794') no-repeat center center/cover;
+    color: #fff;
+    padding: 4rem 0;
+}
+
+main section#home .intro {
+    background-color: rgba(0, 0, 0, 0.6);
+    display: inline-block;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+main section#catalog .book-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+main section#catalog .book-item {
+    background-color: #4b0082;
+    color: #fff;
+    padding: 1rem;
+    margin: 0.5rem;
+    border-radius: 5px;
+    flex: 1 1 200px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 button {
-    background-color: #333;
+    background-color: #ff6347;
     color: #fff;
     border: none;
-    padding: 0.5rem 1rem;
+    padding: 0.7rem 1.5rem;
     cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
 }
 
 button:hover {
-    background-color: #555;
+    background-color: #ff4500;
 }
 
 footer {
     text-align: center;
     padding: 1rem 0;
-    background-color: #333;
+    background-color: #4b0082;
     color: #fff;
 }
 
@@ -65,6 +107,7 @@ form {
     margin: 0 auto;
     display: flex;
     flex-direction: column;
+    text-align: left;
 }
 
 form label {
@@ -80,4 +123,6 @@ form input, form textarea {
 
 form button {
     align-self: flex-end;
+    background-color: #4b0082;
+    color: #fff;
 }
